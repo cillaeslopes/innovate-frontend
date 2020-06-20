@@ -1,0 +1,43 @@
+@import './Basis/colors.scss';
+@import './Basis/fonts.scss';
+
+#navbar {
+    background-color: $default-white;
+    height: 10vh;
+    border: 2px solid transparent;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+    border-image: linear-gradient(to right, #fc27a7 0%, #2cbefc 25%, #adef30 50%, #e527fc 75%, #ffde59 100%);
+    border-image-slice: 1;
+
+    #toolbar {
+        img {
+            height: 70%;
+            transform: scaleX(-1);
+        }
+
+        #app-name {
+            color: $default-black;
+            font-family: $font-brand;
+            font-weight: 100;
+            margin-left: 10px;
+            margin-bottom: 1vh;
+            font-size: 24px;
+            flex-grow: 1;
+            align-self: flex-end;
+        }
+
+        .menu-area {
+            position: relative;
+            align-self: center;
+            width: 40px;
+
+            #btn-menu {
+                position: relative;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}

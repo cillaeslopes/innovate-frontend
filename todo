@@ -4,3 +4,5 @@ lighthouse
 styled-components
 Acessibilidade: o melhor é preocupar desde o início, melhorar depois requer reestrurar muita coisa
 Plataforma: Vercel
+
+gpsup='git push --set-upstream origin $(git_current_branch)'

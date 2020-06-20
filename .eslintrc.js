@@ -1,24 +1,9 @@
+const { off } = require("process");
+
 module.exports = {
-    root: true,
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaFeatures: { jsx: true },
-    },
-    extends: [
-        'eslint:recommended',
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-        'plugin:react/recommended',
-        'plugin:jsx-a11y/recommended',
-        'prettier/@typescript-eslint',
-        'plugin:prettier/recommended',
-    ],
+    extends: 'airbnb-typescript-prettier',
     rules: {
-        'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-        'react/prop-types': 'off',
-    },
-    env: {
-        node: true,
-        browser: true,
-    },
-}
+        "import/prefer-default-export": "off",
+        "react/jsx-props-no-spreading": "off"
+    }
+};

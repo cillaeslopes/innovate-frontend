@@ -1,5 +1,8 @@
 import styled from 'styled-components'
+import menuImageSrc from '../../assets/images/menu.png'
 
-export const MenuButton = styled.button`
-    color: black;
+export const MenuImage = styled.img.attrs({
+    src: menuImageSrc,
+})`
+    width: 50px;
 `

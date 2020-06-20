@@ -1,12 +1,74 @@
 import styled from 'styled-components'
+import { Typography } from '@material-ui/core'
+import sideUnicorn from '../../assets/images/side-unicorn.png'
+import rings from '../../assets/images/rings.png'
 
-export const Container = styled.div``
+const headerHeight = '50px'
+const mobileWidth = '@media (max-width: 768px)'
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+`
 
 export const Header = styled.header`
     display: flex;
     justify-content: flex-end;
+    height: ${headerHeight};
 `
 
-export const Main = styled.main``
+export const MainStyled = styled.main`
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+
+    ${mobileWidth} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+`
+
+export const UnicornImage = styled.img.attrs({
+    src: sideUnicorn,
+})`
+    height: calc(100vh - ${headerHeight});
+
+    ${mobileWidth} {
+        height: 40vh;
+    }
+`
+
+export const TitleContainer = styled.div`
+    padding-bottom: ${headerHeight};
+    background-image: url(${rings});
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    ${mobileWidth} {
+        width: 100%;
+        background-size: 50%;
+        align-items: flex-start;
+        justify-content: center;
+    }
+`
+
+export const Title = styled(Typography).attrs({
+    variant: 'h1',
+})`
+    font-family: 'Crop Types';
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-weight: 200;
+
+    ${mobileWidth} {
+        font-size: 15vw;
+    }
+`
 
 export const Footer = styled.footer``

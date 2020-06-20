@@ -1,7 +1,11 @@
 import React from 'react'
-import * as Styled from './styled'
+import { IconButton } from '@material-ui/core'
+import { MenuImage } from './styled'
 
 const MenuButton: React.FunctionComponent = () => (
-    <Styled.MenuButton>Hello</Styled.MenuButton>
+    <IconButton aria-label="Menu">
+        <MenuImage alt="" />
+    </IconButton>
 )
+
 export default MenuButton

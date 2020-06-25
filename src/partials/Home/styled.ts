@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { Typography } from '@material-ui/core'
+import { Typography, Link } from '@material-ui/core'
 import sideUnicorn from '../../assets/images/side-unicorn.png'
 import rings from '../../assets/images/rings.png'
 
-const headerHeight = '50px'
+const headerHeight = '10vh'
 const mobileWidth = '@media (max-width: 768px)'
 
 export const Container = styled.div`
@@ -71,4 +71,36 @@ export const Title = styled(Typography).attrs({
     }
 `
 
-export const Footer = styled.footer``
+export const Footer = styled.footer`
+    position: fixed;
+    bottom: 2vh;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    ${mobileWidth} {
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        padding-left: 5vw;
+    }
+`
+
+export const Contact = styled(Link)`
+    display: flex;
+    align-items: center;
+    margin: 0 2vw;
+    text-decoration: none;
+    color: #212121;
+
+    ${mobileWidth} {
+        margin: 10px 0;
+    }
+`
+
+export const ContactIcon = styled.img`
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+`

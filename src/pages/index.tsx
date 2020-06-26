@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import MenuButton from '../components/MenuButton'
-import { Container, Header, Footer } from '../partials/Home/styled'
+import { Container, Header } from '../partials/Home/styled'
 import Main from '../partials/Home/Main'
+import Footer from '../partials/Home/Footer'
 import Layout from '../components/Layout'
 
 const Home: React.FunctionComponent = () => (
@@ -19,4 +20,5 @@ const Home: React.FunctionComponent = () => (
         </Container>
     </Layout>
 )
+
 export default Home

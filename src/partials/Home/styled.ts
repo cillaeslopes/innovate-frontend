@@ -71,7 +71,7 @@ export const Title = styled(Typography).attrs({
     }
 `
 
-export const Footer = styled.footer`
+export const FooterStyled = styled.footer`
     position: fixed;
     bottom: 2vh;
     height: 5vh;

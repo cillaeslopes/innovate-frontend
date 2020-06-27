@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterStyled, ContactIcon, Contact } from './styled'
+import { FooterStyled, ContactIcon, Contact, FooterWrapper } from './styled'
 import instagramIcon from '../../assets/images/iconInsta.png'
 import facebookIcon from '../../assets/images/iconFacebook.png'
 import gmailIcon from '../../assets/images/iconGmail.png'
@@ -18,24 +18,26 @@ const links = {
 
 const Footer: React.FunctionComponent = () => (
     <FooterStyled>
-        <Contact href={links.instagram}>
-            <ContactIcon src={instagramIcon} />
-            {SOCIAL_MEDIA}
-        </Contact>
+        <FooterWrapper>
+            <Contact href={links.instagram}>
+                <ContactIcon src={instagramIcon} />
+                {SOCIAL_MEDIA}
+            </Contact>
 
-        <Contact href={links.facebook}>
-            <ContactIcon src={facebookIcon} />
-            {SOCIAL_MEDIA}
-        </Contact>
+            <Contact href={links.facebook}>
+                <ContactIcon src={facebookIcon} />
+                {SOCIAL_MEDIA}
+            </Contact>
 
-        <Contact href={links.googleDrive}>
-            <ContactIcon src={driveIcon} /> {GOOGLE_DRIVE}
-        </Contact>
+            <Contact href={links.googleDrive}>
+                <ContactIcon src={driveIcon} /> {GOOGLE_DRIVE}
+            </Contact>
 
-        <Contact href={links.gmail}>
-            <ContactIcon src={gmailIcon} />
-            {EMAIL}
-        </Contact>
+            <Contact href={links.gmail}>
+                <ContactIcon src={gmailIcon} />
+                {EMAIL}
+            </Contact>
+        </FooterWrapper>
     </FooterStyled>
 )
 

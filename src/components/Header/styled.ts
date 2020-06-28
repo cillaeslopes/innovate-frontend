@@ -36,6 +36,7 @@ export const Title = styled(Typography)`
 
 export const UnicornImage = styled.img.attrs({
     src: unicorn,
+    alt: 'Unicórnio da Innovate',
 })`
     height: 70%;
     transform: scaleX(-1);

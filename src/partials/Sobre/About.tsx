@@ -1,7 +1,8 @@
 import React from 'react'
+import { AboutStyled } from './styled'
 
 const About: React.FunctionComponent = () => (
-    <div>
+    <AboutStyled>
         O Innovate surgiu a partir da necessidade de trazer pessoas para a
         tecnologia. Como pessoas desenvolvedoras, sempre lidamos com requisitos,
         usabilidade, responsividade, coisas que usamos como critérios de
@@ -10,7 +11,8 @@ const About: React.FunctionComponent = () => (
         para resolver problemas diversos de pessoas diversas. E por nos
         perdermos, frequentemente nos vemos em uma posição de ficarmos irritadas
         quando um usuário reclama, quando a empresa age de uma forma X ou quando
-        surgem novos requisitos e tecnologias "obrigatórias" no desenvolvimento.
+        surgem novos requisitos e tecnologias &quot;obrigatórias&quot; no
+        desenvolvimento.
         <br />
         <br />
         Para nós é sempre importante lembrar que a tecnologia só existe porque
@@ -33,9 +35,7 @@ const About: React.FunctionComponent = () => (
         adaptando às mudanças avassaladoras que têm surgido.
         <br />
         <br />E depois de um tempo, nossos meetups cresceram e deixaram de ser
-        apenas eventos, hoje temos muito carinho pela <b>
-            COMUNIDADE INNOVATE
-        </b>{' '}
+        apenas eventos, hoje temos muito carinho pela <b>COMUNIDADE INNOVATE</b>
         e por isso nos dedicamos a criar essa plataforma. Para que as pessoas
         que nos acompanham com tanto carinho tenham ferramentas para se
         aproximarem, para estarem em contato com as nossas iniciativas e para
@@ -45,7 +45,7 @@ const About: React.FunctionComponent = () => (
         <br />
         <br />
         Equipe Innovate
-    </div>
+    </AboutStyled>
 )
 
 export default About

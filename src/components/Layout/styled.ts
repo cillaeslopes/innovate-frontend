@@ -70,12 +70,16 @@ export const Container = styled.div`
     height: 100vh;
 `
 
-export const Main = styled.div`
+export const Main = styled.main`
     margin-top: 10vh;
-    padding: 10px 2vw;
+    padding: 10px 24px;
 `
 
 export const Title = styled.h1`
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 24px;
+
+    @media (max-width: 440px) {
+        font-size: 16px;
+    }
 `

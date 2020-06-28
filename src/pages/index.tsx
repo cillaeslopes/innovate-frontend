@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import MenuButton from '../components/MenuButton'
+import Menu from '../components/Menu'
 import { Container, Header } from '../partials/Home/styled'
 import Main from '../partials/Home/Main'
 import Footer from '../partials/Home/Footer'
@@ -10,10 +10,11 @@ const Home: React.FunctionComponent = () => (
     <Layout>
         <Head>
             <title>Innovate</title>
+            <meta name="description" content="Pagina maravilhosa do Innovate" />
         </Head>
         <Container>
             <Header>
-                <MenuButton />
+                <Menu />
             </Header>
             <Main />
             <Footer />

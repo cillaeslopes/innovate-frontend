@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { Typography, Link, Button } from '@material-ui/core'
+import styled from 'styled-components'
 import sideUnicorn from '../../assets/images/side-unicorn.png'
 import rings from '../../assets/images/rings.png'
 
@@ -85,11 +85,6 @@ export const FooterStyled = styled.footer`
         justify-content: center;
         align-items: center;
     }
-
-    ${mobileWidth} {
-        padding-left: 5vw;
-        align-items: flex-start;
-    }
 `
 
 export const FooterWrapper = styled.div`
@@ -100,6 +95,12 @@ export const FooterWrapper = styled.div`
 
     @media (max-width: 960px) {
         width: 300px;
+    }
+
+    ${mobileWidth} {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
     }
 `
 
@@ -115,16 +116,14 @@ export const Contact = styled(Button).attrs({
     color: #212121;
     text-transform: none;
 
-    ${mobileWidth} {
-        margin: 10px 0;
-    }
-
     :hover {
         text-decoration: none;
     }
 `
 
-export const ContactIcon = styled.img`
+export const ContactIcon = styled.img.attrs({
+    alt: '',
+})`
     width: 25px;
     height: 25px;
     margin-right: 5px;

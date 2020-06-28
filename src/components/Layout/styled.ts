@@ -60,5 +60,6 @@ export const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
         font-family: 'Montserrat';
+        color: #212121;
     }
 `

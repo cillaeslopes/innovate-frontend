@@ -72,7 +72,11 @@ export const Container = styled.div`
 
 export const Main = styled.main`
     margin-top: 10vh;
-    padding: 10px 24px;
+    padding: 32px 48px;
+
+    @media (max-width: 767px) {
+        padding: 24px 32px;
+    }
 `
 
 export const Title = styled.h1`

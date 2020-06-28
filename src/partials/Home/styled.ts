@@ -8,7 +8,6 @@ const mobileWidth = '@media (max-width: 768px)'
 
 export const HomeLayout = styled
 
-
 export const Container = styled.div`
     display: flex;
     flex-direction: column;

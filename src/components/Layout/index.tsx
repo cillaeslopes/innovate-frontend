@@ -1,10 +1,33 @@
 import React from 'react'
-import { GlobalStyle } from './styled'
+import Head from 'next/head'
+import { GlobalStyle, Container, Title, Main } from './styled'
+import StyledHeader from '../Header'
 
-const Layout: React.FunctionComponent = ({ children }) => (
+export interface Props {
+    pageTitle: string
+    pageDescription: string
+    title: string
+}
+
+const Layout: React.FunctionComponent<Props> = ({
+    pageTitle,
+    pageDescription,
+    title,
+    children,
+}) => (
     <>
         <GlobalStyle />
-        {children}
+        <Head>
+            <title>{pageTitle}</title>
+            <meta name="description" content={pageDescription} />
+        </Head>
+        <Container>
+            <StyledHeader />
+            <Main>
+                <Title>{title}</Title>
+                {children}
+            </Main>
+        </Container>
     </>
 )
 

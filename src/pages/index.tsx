@@ -4,10 +4,11 @@ import Menu from '../components/Menu'
 import { Container, Header } from '../partials/Home/styled'
 import Main from '../partials/Home/Main'
 import Footer from '../partials/Home/Footer'
-import Layout from '../components/Layout'
+import { GlobalStyle } from '../components/Layout/styled'
 
 const Home: React.FunctionComponent = () => (
-    <Layout>
+    <>
+        <GlobalStyle />
         <Head>
             <title>Innovate</title>
             <meta name="description" content="Pagina maravilhosa do Innovate" />
@@ -19,7 +20,7 @@ const Home: React.FunctionComponent = () => (
             <Main />
             <Footer />
         </Container>
-    </Layout>
+    </>
 )
 
 export default Home

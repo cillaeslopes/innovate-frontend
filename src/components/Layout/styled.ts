@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import montserratLight from '../../assets/fonts/Montserrat-Light.ttf'
 import montserratThin from '../../assets/fonts/Montserrat-Thin.ttf'
 import montserratRegular from '../../assets/fonts/Montserrat-Regular.ttf'
@@ -62,4 +62,20 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat';
         color: #212121;
     }
+`
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+`
+
+export const Main = styled.div`
+    margin-top: 10vh;
+    padding: 10px 2vw;
+`
+
+export const Title = styled.h1`
+    text-transform: uppercase;
+    font-size: 28px;
 `

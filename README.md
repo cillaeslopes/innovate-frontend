@@ -6,7 +6,7 @@ A Innovate iniciou como uma iniciativa de meetups para unir *Tecnologia* e *Dive
 
 Atualmente você pode nos encontrar no Instagram [@innovatemeetup](https://www.instagram.com/innovatemeetup/) e no Facebook [@innovatemeetup](https://www.facebook.com/innovate.meetup).
 
-E em breve no [nosso site](http://innovatebh.com/)
+E no nosso site [http://innovatebh.com/](http://innovatebh.com/)
 
 ### O Projeto
 
@@ -37,7 +37,7 @@ npm run dev
 
 ### Como Contribuir
 
-Caso você queira contribuir, é só abrir um PR pra gente, mas para isso, pedimos que utilize os padrões que nós adotamos.
+Caso você queira contribuir, é só abrir um PR pra gente na branch `staging`, mas para isso, pedimos que utilize os padrões que nós adotamos e estão descritos abaixo.
 
 #### Padrões de Branch
 

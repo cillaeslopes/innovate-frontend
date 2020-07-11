@@ -7,6 +7,8 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+const GA_URL = 'https://www.googletagmanager.com/gtag/js?id=UA-172464366-1'
+
 export default class MyDocument extends Document {
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     static async getInitialProps(ctx: DocumentContext) {
@@ -43,6 +45,20 @@ export default class MyDocument extends Document {
                     <meta
                         name="viewport"
                         content="width=device-width, initial-scale=1.0"
+                    />
+                    <script async src={GA_URL} />
+                    <script
+                        // eslint-disable-next-line react/no-danger
+                        dangerouslySetInnerHTML={{
+                            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
+                                        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172464366-1"></script>
+                                        <script>
+                                        window.dataLayer = window.dataLayer || [];
+                                        function gtag(){dataLayer.push(arguments);}
+                                        gtag('js', new Date());
+                                        gtag('config', 'UA-172464366-1');
+                                        </script>`,
+                        }}
                     />
                 </Head>
                 <body style={{ margin: 0, height: '100%' }}>

@@ -1,12 +1,14 @@
 import React from 'react'
 import Menu from '../Menu'
-import { Header, NavBar, Title, UnicornImage } from './styled'
+import { Header, NavBar, Title, UnicornImage, HomeLink } from './styled'
 
 const StyledHeader: React.FunctionComponent = () => (
     <Header>
         <NavBar>
-            <UnicornImage />
-            <Title>Innovate</Title>
+            <HomeLink href="/">
+                <UnicornImage />
+                <Title>Innovate</Title>
+            </HomeLink>
             <Menu />
         </NavBar>
     </Header>

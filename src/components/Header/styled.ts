@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { AppBar, Toolbar, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, Typography, Link } from '@material-ui/core'
 import unicorn from '../../assets/images/unicorn.png'
 
 export const Header = styled(AppBar).attrs({
@@ -25,13 +25,15 @@ export const NavBar = styled(Toolbar)`
     height: 100%;
 `
 
-export const Title = styled(Typography)`
-    font-family: 'Crop Types';
-    text-transform: uppercase;
-    font-size: 24px;
+export const HomeLink = styled(Link).attrs({
+    href: '/',
+})`
+    height: 100%;
+    display: flex;
     flex-grow: 1;
-    align-self: flex-end;
-    padding-bottom: 10px;
+    :hover {
+        text-decoration: none;
+    }
 `
 
 export const UnicornImage = styled.img.attrs({
@@ -41,4 +43,13 @@ export const UnicornImage = styled.img.attrs({
     height: 70%;
     transform: scaleX(-1);
     margin-right: 20px;
+    align-self: center;
+`
+
+export const Title = styled(Typography)`
+    font-family: 'Crop Types';
+    text-transform: uppercase;
+    font-size: 24px;
+    align-self: flex-end;
+    padding-bottom: 10px;
 `

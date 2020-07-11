@@ -11,7 +11,10 @@ const Home: React.FunctionComponent = () => (
         <GlobalStyle />
         <Head>
             <title>Innovate</title>
-            <meta name="description" content="Pagina maravilhosa do Innovate" />
+            <meta
+                name="description"
+                content="Plataforma da Innovate, a Comunidade de TI mais legal de BH"
+            />
         </Head>
         <Container>
             <Header>

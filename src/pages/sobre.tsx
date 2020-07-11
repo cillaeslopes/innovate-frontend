@@ -3,7 +3,8 @@ import Layout from '../components/Layout'
 import Main from '../partials/Sobre/Main'
 
 const pageTitle = 'Innovate: Sobre'
-const pageDescription = 'Pagina maravilhosa do Innovate'
+const pageDescription =
+    'Um pouco mais sobre a Innovate, a Comunidade de TI mais legal de BH'
 const title = 'Quem somos nós na fila do pão'
 
 const About: React.FunctionComponent = () => (

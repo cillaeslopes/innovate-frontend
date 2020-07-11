@@ -1,32 +1,72 @@
-# PLATAFORMA INNOVATE
+# A Comunidade Innovate
 
-A Plataforma Innovate é o site criado pela equipe do Innovate para facilitar a conexão entre os membros da comunidade e divulgação de conteúdo e eventos.
+A Innovate iniciou como uma iniciativa de meetups para unir *Tecnologia* e *Diversidade*. Aos poucos foi se tornando a comunidade mais linda de tecnologia. Nossa proposta é nos unirmos para fazermos a tecnologia cada vez mais diversa e inclusiva e nos tornarmos profissionais cada vez melhores.
 
-## Sobre o Innovate
+### Onde nos Encontrar
 
-O Innovate começou como um grupo de meetups com o objetivo de abordar conteúdo técnico de tecnologia e diversidade cultural em cada evento. Acreditamos que é extremamente importante que todas as tecnologistas tenam sempre em mente as pessoas que desejam e que mais precisam atingir, pois só assim a tecnologia é capaz de causar impactos verdadeiramente benignos na sociedade.
+Atualmente você pode nos encontrar no Instagram [@innovatemeetup](https://www.instagram.com/innovatemeetup/) e no Facebook [@innovatemeetup](https://www.facebook.com/innovate.meetup).
 
-## Onde nos Encontrar
+E em breve no [nosso site](http://innovatebh.com/)
 
-Após mais de um ano, optamos em não utilizar mais a plataforma [Meetup](https://meetup.com) por conta do custo-benefício da plataforma. A partir daí decidimos criar nosso próprio site e conseguir todas as ferramentas que de fato precisamos para nossa comunidade. Você pode nos encontrar atualmente o Instagram [@innovatemeetup](https://www.instagram.com/innovatemeetup/) e no Facebook [@innovatemeetup](https://www.facebook.com/innovate.meetup/).
+### O Projeto
 
-> E em breve no nosso site
+Após um tempo utilizando a plataforma *Meetup* entendemos que financeiramente não era mais viável, principalmente após a pandemia. Tanto não usavamos os recursos disponibilizados pela plataforma de forma que valesse a pena, quanto queriamos outras funcionalidades que não eram proporcionadas na plataforma. Por isso, decidimos criar a nossa. E cá estamos :)
 
-## Quem faz o Innovate
+Atualmente o projeto ainda está em fase de desenvolvimento da base da plataforma, então muita coisa ainda está no nosso backlog de features, mas aceitamos issues e sugestões. 
+
+### Tech Stack do Projeto
+
+A Plataforma Innovate está desenvolvida em [React](https://pt-br.reactjs.org/), com o framework [NextJS](https://nextjs.org/) e linguagem [Typescript](https://www.typescriptlang.org/). Para gerenciamento de bibliotecas usamos o [NPM](https://www.npmjs.com/)
+
+### Executar o Projeto
+
+- Clone o projeto
+```
+git clone git@github.com:innovatebh/innovate-frontend.git
+```
+
+- Instale as dependências
+```
+npm install
+```
+
+- Execute o projeto
+```
+npm run dev
+```
+
+### Como Contribuir
+
+Caso você queira contribuir, é só abrir um PR pra gente, mas para isso, pedimos que utilize os padrões que nós adotamos.
+
+#### Padrões de Branch
+
+| Tag | Nome da Branch |
+|--|--|
+| Melhoria / feature | feature/descricao-da-melhoria |
+| Correção / fix | fix/descricao-da-correcao |
+| Refatoração / refactoring | refactoring/descricao-da-refatoracao |
+
+> Obs: se o PR for relacionado a uma issue, incluir o numero da issue no nome da branch. Exemplo: `tag/ID-descricao`
+
+#### Padrões de Commits
+
+Durante os seus commits, pedimos que siga nosso padrão também:
+
+Se o PR está relacionado a uma issue:
+`[ID-DA-ISSUE] descrição do commit`
+
+Se o PR não está relacionado a uma issue:
+`[TAG] descricao do commit`
+
+> Obs: lembrando que as tags são: feature, fix, refactoring
+
+### Entre em Contato
 
 Atualmente a equipe que organiza o Innovate é composta por:
-* Priscilla Lopes [(@cillaeslopes)](https://www.instagram.com/cillaeslopes/)
-* Renata Dias [(@renatadbdias)](https://www.instagram.com/renatadbdias/)
-* Lucas Canuto [(@tamirfaria)](https://www.instagram.com/tamirfaria/)
 
-E desde o começo a Juliana Lourdes [(@julourdes)](https://www.instagram.com/julourdes/) está conosco nos ajudando a registrar nossos encontros épicos <3
+Priscilla Lopes ([@cillaeslopes](mailto:cillaeslopes@gmail.com))
+Renata Dias ([@renatadbdias](mailto:renatyynhah@gmail.com))
+Lucas Canuto ([@tamirfaria](mailto:lucastamir@gmail.com))
 
-## Arquitetura do Projeto
-
-React Web + NodeJS + MongoDB
-
-> Você encontra as instruções de setup dentro de cada módulo
-
-## Projeto React
-
-Para executar o projeto local execute `npm run start-dev`
+E adoraríamos te ouvir no [innovate.meetup@gmail.com](mailto:innovate.meetup@gmail.com)

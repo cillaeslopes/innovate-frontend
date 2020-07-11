@@ -1,0 +1,32 @@
+Testes:
+jest
+cypress
+
+Pipeline:
+Circle CI
+
+Servidor:
+Vercel
+
+Material UI:
+Cores
+Textos
+
+Cores:
+$innovate-pink: #ff66c4;
+$innovate-blue: #03acff;
+$innovate-yellow: #ffde59;
+$innovate-green: #82da57;
+$innovate-purple: #76079a;
+$default-black: #212121;
+$default-gray: #737373;
+$default-white: #fafafa;
+$backgroung-transparency: #ffffffbf;
+
+Descrições:
+Home
+Sobre
+
+Git:
+Default para branch
+Default para commits

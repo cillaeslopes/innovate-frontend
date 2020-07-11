@@ -1,6 +1,19 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Main from '../partials/Sobre/Main'
 
-const About: React.FunctionComponent = () => <Layout />
+const pageTitle = 'Innovate: Sobre'
+const pageDescription = 'Pagina maravilhosa do Innovate'
+const title = 'Quem somos nós na fila do pão'
+
+const About: React.FunctionComponent = () => (
+    <Layout
+        pageTitle={pageTitle}
+        pageDescription={pageDescription}
+        title={title}
+    >
+        <Main />
+    </Layout>
+)
 
 export default About

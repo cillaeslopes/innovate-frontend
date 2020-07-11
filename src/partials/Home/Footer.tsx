@@ -1,9 +1,9 @@
 import React from 'react'
 import { FooterStyled, ContactIcon, Contact, FooterWrapper } from './styled'
-import instagramIcon from '../../assets/images/iconInsta.png'
-import facebookIcon from '../../assets/images/iconFacebook.png'
-import gmailIcon from '../../assets/images/iconGmail.png'
-import driveIcon from '../../assets/images/iconDrive.png'
+import instagramIcon from '../../assets/images/iconInsta.svg'
+import facebookIcon from '../../assets/images/iconFacebook.svg'
+import gmailIcon from '../../assets/images/iconGmail.svg'
+import driveIcon from '../../assets/images/iconDrive.svg'
 
 const SOCIAL_MEDIA = '@innovatemeetup'
 const GOOGLE_DRIVE = 'bit.ly/innovatemeetup'

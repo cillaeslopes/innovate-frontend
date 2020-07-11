@@ -65,8 +65,8 @@ Se o PR não está relacionado a uma issue:
 
 Atualmente a equipe que organiza o Innovate é composta por:
 
-Priscilla Lopes ([@cillaeslopes](mailto:cillaeslopes@gmail.com))
-Renata Dias ([@renatadbdias](mailto:renatyynhah@gmail.com))
-Lucas Canuto ([@tamirfaria](mailto:lucastamir@gmail.com))
+Priscilla Lopes ([@cillaeslopes](mailto:cillaeslopes@gmail.com))  
+Renata Dias ([@renatadbdias](mailto:renatyynhah@gmail.com))  
+Lucas Canuto ([@tamirfaria](mailto:lucastamir@gmail.com))  
 
 E adoraríamos te ouvir no [innovate.meetup@gmail.com](mailto:innovate.meetup@gmail.com)

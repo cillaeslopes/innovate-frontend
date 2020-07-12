@@ -1,7 +1,7 @@
 import { Typography, Link, Button } from '@material-ui/core'
 import styled from 'styled-components'
-import sideUnicorn from '../../assets/images/side-unicorn.svg'
-import rings from '../../assets/images/rings.svg'
+import sideUnicorn from '../../assets/images/side-unicorn.png'
+import rings from '../../assets/images/rings.png'
 
 const headerHeight = '10vh'
 const mobileWidth = '@media (max-width: 768px)'

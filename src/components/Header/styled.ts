@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { AppBar, Toolbar, Typography, Link } from '@material-ui/core'
-import unicorn from '../../assets/images/unicorn.svg'
+import unicorn from '../../assets/images/unicorn.png'
 
 export const Header = styled(AppBar).attrs({
     color: '#fafafa',

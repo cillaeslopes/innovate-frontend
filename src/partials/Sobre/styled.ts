@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Typography, IconButton } from '@material-ui/core'
-import sideUnicorn from '../../assets/images/side-unicorn.png'
+import sideUnicorn from '../../assets/images/side-unicorn.png?size=300&ts-asset'
 
 const mobileWidth = '@media (max-width: 767px)'
 const textBackgroundColor = '#ffffffbf'
@@ -69,8 +69,12 @@ export const TeamInfoStyled = styled.div`
     margin-bottom: 15px;
 `
 
-export const Photo = styled.img`
-    width: 140px;
+const photoWidth = '140px'
+
+export const Photo = styled.img.attrs({
+    sizes: photoWidth,
+})`
+    width: ${photoWidth};
     height: 100%;
     border-radius: 50%;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);

@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 import { SwipeableDrawer, Button, Link } from '@material-ui/core'
-import menuImageSrc from '../../assets/images/menu.png'
+import menuImageSrc from '../../assets/images/menu.png?resize&min=50&max=150&ts-asset'
+
+const menuImageWidth = '50px'
 
 export const MenuImage = styled.img.attrs({
     src: menuImageSrc,
+    srcSet: menuImageSrc.srcSet,
+    sizes: menuImageWidth,
 })`
-    width: 50px;
+    width: ${menuImageWidth};
 `
 
 export const StyledMenu = styled(SwipeableDrawer).attrs({

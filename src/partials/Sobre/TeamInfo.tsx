@@ -6,7 +6,7 @@ import { Photo, Name, Minibio, Info, LinkIcon, TeamInfoStyled } from './styled'
 
 export interface Props {
     name: string
-    photo: string
+    photo: ImageAsset
     minibio: string
     instagram: string
     linkedin: string
@@ -22,7 +22,7 @@ const TeamInfo: React.FunctionComponent<Props> = ({
     mail,
 }) => (
     <TeamInfoStyled>
-        <Photo src={photo} alt="" />
+        <Photo src={photo} srcSet={photo.srcSet} alt="" />
         <Info>
             <Name>{name}</Name>
             <Minibio>{minibio}</Minibio>

@@ -1,6 +1,6 @@
 import { Typography, Link, Button } from '@material-ui/core'
 import styled from 'styled-components'
-import sideUnicorn from '../../assets/images/side-unicorn.png'
+import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=500&max=1500&ts-asset'
 import rings from '../../assets/images/rings.png'
 
 const headerHeight = '10vh'
@@ -33,6 +33,7 @@ export const MainStyled = styled.main`
 
 export const UnicornImage = styled.img.attrs({
     src: sideUnicorn,
+    srcSet: sideUnicorn.srcSet,
 })`
     height: calc(100vh - ${headerHeight});
 
@@ -123,10 +124,13 @@ export const Contact = styled(Button).attrs({
     }
 `
 
+const contactIconSize = '25px'
+
 export const ContactIcon = styled.img.attrs({
     alt: '',
+    sizes: contactIconSize,
 })`
-    width: 25px;
-    height: 25px;
+    width: ${contactIconSize};
+    height: ${contactIconSize};
     margin-right: 5px;
 `

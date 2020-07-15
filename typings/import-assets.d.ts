@@ -31,11 +31,6 @@ declare module '*.svg' {
     export = value
 }
 
-declare module '*.gif' {
-    const value: ImageAsset
-    export = value
-}
-
 declare module '*&ts-asset' {
     const value: ImageAsset
     export = value

@@ -5,6 +5,6 @@ module.exports = {
     rules: {
         "import/prefer-default-export": "off",
         "react/jsx-props-no-spreading": "off",
-        "import/no-unresolved": ["error", { "ignore": ["\\.(png|jpg|svg|gif)\\?(.+)$"] }]
+        "import/no-unresolved": ["error", { "ignore": ["\\.(png|jpg|svg)\\?(.+)$"] }]
     }
 };

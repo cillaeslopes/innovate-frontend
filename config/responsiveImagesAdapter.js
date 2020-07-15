@@ -4,15 +4,9 @@ const imagemin = require('imagemin')
 const imageminPngquant = require('imagemin-pngquant')
 const imageminMozJpeg = require('imagemin-mozjpeg')
 const imageminSvgo = require('imagemin-svgo')
-const imageminGifSicle = require('imagemin-gifsicle')
 
 const imageMinOptions = {
-    plugins: [
-        imageminPngquant(),
-        imageminMozJpeg(),
-        imageminSvgo(),
-        imageminGifSicle(),
-    ],
+    plugins: [imageminPngquant(), imageminMozJpeg(), imageminSvgo()],
 }
 
 /**

@@ -10,6 +10,7 @@ module.exports = withPlugins([
         optimizedImages,
         {
             optimizeImagesInDev: true,
+            handleImages: ['jpeg', 'png', 'svg', 'webp'],
             responsive: {
                 steps: 3,
                 adapter: responsiveImagesAdapter,

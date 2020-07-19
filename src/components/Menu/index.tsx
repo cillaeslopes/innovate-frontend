@@ -30,6 +30,9 @@ const Menu: React.FunctionComponent = () => {
                 <Link href="/sobre" passHref>
                     <MenuLink>Sobre</MenuLink>
                 </Link>
+                <Link href="/posts" passHref>
+                    <MenuLink>Posts</MenuLink>
+                </Link>
             </StyledMenu>
         </>
     )

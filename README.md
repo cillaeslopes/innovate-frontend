@@ -61,6 +61,32 @@ Se o PR não está relacionado a uma issue:
 
 > Obs: lembrando que as tags são: feature, fix, refactoring
 
+#### Adicionando imagens ao projeto
+
+Imagens são adicionadas na pasta `src/assets/images`. Ao utilizar a imagem em um componente, é importante definir uma largura para sua imagem que funcione no componente que irá mostrá-la. Além disso, temos também que utilizar o atributo [srcset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset) para que telas com maior resolução (como retina por exemplo) mostrem a imagem não perca a qualidade.
+
+O exemplo abaixo mostra como uma imagem deve ser carregada seguindo este padrão.
+
+```jsx
+// O import vai gerar 3 imagens: `menu-50.png`, `menu-100.png` e `menu-150.png`
+import menuImageSrc from '../../assets/images/menu.png?resize&min=50&max=150&ts-asset'
+const menuImageWidth = '50px'
+
+export const MenuImage = styled.img.attrs({
+    src: menuImageSrc,
+    srcSet: menuImageSrc.srcSet,
+    sizes: menuImageWidth,
+})`
+    width: ${menuImageWidth};
+`
+```
+
+- O parâmetro `resize` do `import` é obrigatório quando sevocê fizer qualquer alteração de tamanho na imagem
+- O `import` deve finalizar com o parâmetro `&ts-asset` para que não haja erros no Typescript
+- O `import` deve definir o tamanho mínimo e o tamanho máximo da imagem através dos parâmetros `min` e `max`. Vão ser geradas 3 imagens utilizando os valores `min` e `max`, então o `max` geralmente deve ser 3 vezes o valor do `min`
+- O atributo `sizes` pode, na maioria dos casos, ser definido como o valor do `width` da imagem. Caso ele não seja passado o browser vai assumir que a imagem ocupa a tela inteira ao escolher uma das imagems do `srcSet`
+
+
 ### Entre em Contato
 
 Atualmente a equipe que organiza o Innovate é composta por:

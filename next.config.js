@@ -1,4 +1,20 @@
-const withImages = require('next-images')
+/* eslint-disable @typescript-eslint/no-var-requires */
+const withPlugins = require('next-compose-plugins')
 const withFonts = require('next-fonts')
+const optimizedImages = require('next-optimized-images')
+const responsiveImagesAdapter = require('./config/responsiveImagesAdapter')
 
-module.exports = withImages(withFonts())
+module.exports = withPlugins([
+    [withFonts],
+    [
+        optimizedImages,
+        {
+            optimizeImagesInDev: true,
+            handleImages: ['jpeg', 'png', 'svg', 'webp'],
+            responsive: {
+                steps: 3,
+                adapter: responsiveImagesAdapter,
+            },
+        },
+    ],
+])

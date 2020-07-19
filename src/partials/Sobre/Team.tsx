@@ -1,9 +1,9 @@
 import React from 'react'
 import { Subtitle, TeamWrapper, TeamStyled } from './styled'
 import TeamInfo from './TeamInfo'
-import photoPri from '../../assets/images/priscilla.png'
-import photoRe from '../../assets/images/renata.png'
-import photoLucas from '../../assets/images/lucas.png'
+import photoPri from '../../assets/images/priscilla.png?resize&min=140&max=420&ts-asset'
+import photoRe from '../../assets/images/renata.png?resize&min=140&max=420&ts-asset'
+import photoLucas from '../../assets/images/lucas.png?resize&min=140&max=420&ts-asset'
 
 const Team: React.FunctionComponent = () => (
     <TeamStyled>

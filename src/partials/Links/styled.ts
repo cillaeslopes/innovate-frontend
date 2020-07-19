@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Typography, Link } from '@material-ui/core'
+import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=50&max=150&ts-asset'
 
 const mobileWidth = '@media (max-width: 767px)'
 
@@ -14,6 +15,18 @@ export const MainStyled = styled.div`
     ${mobileWidth} {
         flex-direction: column;
     }
+`
+
+export const Unicorn = styled.img.attrs({
+    src: sideUnicorn,
+    srcSet: sideUnicorn.srcSet,
+    alt: 'Unicórnio fofinho minúsculo escondido',
+})`
+    height: 50px;
+    position: fixed;
+    top: 8vh;
+    right: 120px;
+    transform: rotate(90deg);
 `
 
 export const Section = styled.div`
@@ -42,9 +55,9 @@ export const SectionLink = styled(Link).attrs({
     target: '_blank',
     rel: 'noopener',
 })`
-    color: #03acff;
+    color: #212121;
     text-decoration: underline;
-    text-decoration-color: #ff66c4;
+    text-decoration-color: #03acff;
 `
 
 export const SectionDivisor = styled.div`

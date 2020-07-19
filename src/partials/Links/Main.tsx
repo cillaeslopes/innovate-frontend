@@ -1,9 +1,10 @@
 import React from 'react'
-import { MainStyled, SectionDivisor } from './styled'
+import { MainStyled, SectionDivisor, Unicorn } from './styled'
 import LinkSection from './Section'
 
 const Main: React.FunctionComponent = () => (
     <MainStyled>
+        <Unicorn />
         <LinkSection
             title="Innovate Indica"
             text={

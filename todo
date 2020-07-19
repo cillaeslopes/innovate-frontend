@@ -5,9 +5,6 @@ cypress
 Pipeline:
 Circle CI
 
-Servidor:
-Vercel
-
 Material UI:
 Cores
 Textos
@@ -22,11 +19,3 @@ $default-black: #212121;
 $default-gray: #737373;
 $default-white: #fafafa;
 $backgroung-transparency: #ffffffbf;
-
-Descrições:
-Home
-Sobre
-
-Git:
-Default para branch
-Default para commits

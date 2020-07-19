@@ -42,7 +42,25 @@ export const SectionLink = styled(Link).attrs({
     target: '_blank',
     rel: 'noopener',
 })`
-    color: #ff66c4;
+    color: #03acff;
     text-decoration: underline;
     text-decoration-color: #ff66c4;
+`
+
+export const SectionDivisor = styled.div`
+    height: 1px;
+    background-image: linear-gradient(
+        to right,
+        #fc27a7 0%,
+        #2cbefc 25%,
+        #adef30 50%,
+        #e527fc 75%,
+        #ffde59 100%
+    );
+    width: 100%;
+    margin: 40px 100px;
+
+    ${mobileWidth} {
+        margin: 40px 0;
+    }
 `

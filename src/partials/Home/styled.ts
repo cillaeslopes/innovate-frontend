@@ -97,6 +97,8 @@ export const FooterWrapper = styled.div`
 
     @media (max-width: 960px) {
         width: 300px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     ${mobileWidth} {

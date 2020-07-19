@@ -21,10 +21,11 @@
   },
   "exclude": [
     "node_modules",
-    "next.config.js"
   ],
   "include": [
     "next-env.d.ts",
+    "config/*.js",
+    "next.config.js",
     "**/*.ts",
     "**/*.tsx"
   ]

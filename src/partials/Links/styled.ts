@@ -22,10 +22,10 @@ export const Unicorn = styled.img.attrs({
     srcSet: sideUnicorn.srcSet,
     alt: 'Unicórnio fofinho minúsculo escondido',
 })`
-    height: 50px;
+    height: 5vh;
     position: fixed;
-    top: 8vh;
-    right: 120px;
+    top: 9vh;
+    right: 10vw;
     transform: rotate(90deg);
 `
 

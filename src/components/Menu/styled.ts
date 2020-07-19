@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { SwipeableDrawer, Button, Link } from '@material-ui/core'
-import menuImageSrc from '../../assets/images/menu.png'
+import menuImageSrc from '../../assets/images/menu.svg'
 
 export const MenuImage = styled.img.attrs({
     src: menuImageSrc,

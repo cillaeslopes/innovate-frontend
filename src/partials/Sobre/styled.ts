@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Typography, IconButton } from '@material-ui/core'
-import sideUnicorn from '../../assets/images/side-unicorn.png'
+import sideUnicorn from '../../assets/images/side-unicorn.svg'
 
 const mobileWidth = '@media (max-width: 767px)'
 const textBackgroundColor = '#ffffffbf'

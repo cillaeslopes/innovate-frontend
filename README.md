@@ -16,7 +16,7 @@ Atualmente o projeto ainda está em fase de desenvolvimento da base da plataform
 
 ## Tech Stack do Projeto
 
-A Plataforma Innovate está desenvolvida em [React](https://pt-br.reactjs.org/), com o framework [NextJS](https://nextjs.org/) e linguagem [Typescript](https://www.typescriptlang.org/). Para gerenciamento de bibliotecas usamos o [NPM](https://www.npmjs.com/)
+A Plataforma Innovate está desenvolvida em [React](https://pt-br.reactjs.org/), com o framework [NextJS](https://nextjs.org/) e linguagem [Typescript](https://www.typescriptlang.org/). Para gerenciamento de bibliotecas usamos o [Yarn](https://yarnpkg.com/)
 
 ## Executar o Projeto
 
@@ -27,12 +27,12 @@ git clone git@github.com:innovatebh/innovate-frontend.git
 
 - Instale as dependências
 ```
-npm install
+yarn install
 ```
 
 - Execute o projeto
 ```
-npm run dev
+yarn dev
 ```
 
 ## Como Contribuir

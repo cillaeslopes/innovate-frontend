@@ -1,4 +1,4 @@
-import { Typography, Link, Button } from '@material-ui/core'
+import { Typography, Link, Button, Drawer } from '@material-ui/core'
 import styled from 'styled-components'
 import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=500&max=1500&ts-asset'
 import rings from '../../assets/images/rings.png'
@@ -13,13 +13,6 @@ export const Container = styled.div`
     flex-direction: column;
     height: 100vh;
 `
-
-export const Header = styled.header`
-    display: flex;
-    justify-content: flex-end;
-    height: ${headerHeight};
-`
-
 export const MainStyled = styled.main`
     flex: 1;
     display: flex;
@@ -135,4 +128,12 @@ export const ContactIcon = styled.img.attrs({
     width: ${contactIconSize};
     height: ${contactIconSize};
     margin-right: 5px;
+`
+
+export const FixedMenu = styled(Drawer).attrs({
+    variant: 'permanent',
+    anchor: 'right',
+})`
+    width: 100px;
+    flexshrink: 0;
 `

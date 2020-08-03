@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
-import Menu from '../components/Menu'
-import { Container, Header } from '../partials/Home/styled'
+import { Container, FixedMenu } from '../partials/Home/styled'
 import Main from '../partials/Home/Main'
 import Footer from '../partials/Home/Footer'
 import { GlobalStyle } from '../components/Layout/styled'
+import Menu from '../partials/Home/Menu'
 
 const Home: React.FunctionComponent = () => (
     <>
@@ -17,12 +17,10 @@ const Home: React.FunctionComponent = () => (
             />
         </Head>
         <Container>
-            <Header>
-                <Menu />
-            </Header>
             <Main />
             <Footer />
         </Container>
+        <Menu />
     </>
 )
 

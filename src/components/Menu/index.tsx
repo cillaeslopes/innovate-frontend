@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { IconButton } from '@material-ui/core'
-import Link from 'next/link'
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded'
-import { MenuImage, StyledMenu, MenuLink, MenuButton } from './styled'
+import { MenuImage, StyledMenu, MenuButton } from './styled'
+import Items from './Items'
 
 const Menu: React.FunctionComponent = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -24,15 +24,7 @@ const Menu: React.FunctionComponent = () => {
                 >
                     Fechar
                 </MenuButton>
-                <Link href="/" passHref>
-                    <MenuLink>Home</MenuLink>
-                </Link>
-                <Link href="/sobre" passHref>
-                    <MenuLink>Sobre</MenuLink>
-                </Link>
-                <Link href="/links" passHref>
-                    <MenuLink>Links</MenuLink>
-                </Link>
+                <Items />
             </StyledMenu>
         </>
     )

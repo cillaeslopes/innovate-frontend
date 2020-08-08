@@ -86,8 +86,8 @@ export const FooterStyled = styled.footer`
                 width: calc(100% - 300px);
             `
         }
-        return `width: 100%`;
-    }};
+        return `width: 100%;`
+    }}
 
     @media (max-width: 960px) {
         flex-direction: column;

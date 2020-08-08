@@ -18,7 +18,7 @@ const links = {
 }
 
 const Footer: React.FunctionComponent = () => {
-    const { isOpen, setIsOpen, persistentMenu } = useContext(MenuContext)
+    const { isOpen, persistentMenu } = useContext(MenuContext)
 
     return (
         <FooterStyled menuIsOpen={isOpen} persistentMenu={persistentMenu}>

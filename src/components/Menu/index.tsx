@@ -6,7 +6,7 @@ import { MenuImage, StyledMenu, MenuButton } from './styled'
 import Items from './Items'
 
 const Menu: React.FunctionComponent = () => {
-    const { isOpen, setIsOpen } = useContext(MenuContext)
+    const { isOpen, setIsOpen, persistentMenu } = useContext(MenuContext)
 
     const toggleMenu = () => {
         setIsOpen(prevIsOpen => !prevIsOpen)
@@ -14,9 +14,11 @@ const Menu: React.FunctionComponent = () => {
 
     return (
         <>
-            <IconButton aria-label="Abrir menu" onClick={toggleMenu}>
-                <MenuImage alt="" />
-            </IconButton>
+            {!(isOpen && persistentMenu) && (
+                <IconButton aria-label="Abrir menu" onClick={toggleMenu}>
+                    <MenuImage alt="" />
+                </IconButton>
+            )}
             <StyledMenu
                 open={isOpen}
                 onOpen={toggleMenu}
@@ -30,6 +32,7 @@ const Menu: React.FunctionComponent = () => {
                 >
                     Fechar
                 </MenuButton>
+
                 <Items />
             </StyledMenu>
         </>

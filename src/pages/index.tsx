@@ -32,7 +32,10 @@ const Home: React.FunctionComponent = () => {
                     content="Plataforma da Innovate, a Comunidade de TI mais legal de BH"
                 />
             </Head>
-            <StyledContainer menuIsOpen={isOpen} persistentMenu={persistentMenu}>
+            <StyledContainer
+                menuIsOpen={isOpen}
+                persistentMenu={persistentMenu}
+            >
                 <Header>
                     <Menu />
                 </Header>

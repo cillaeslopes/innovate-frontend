@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { IconButton } from '@material-ui/core'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded'
+import { MenuContext } from '../../contexts/menuContext'
 import { MenuImage, StyledMenu, MenuButton } from './styled'
 import Items from './Items'
 
 const Menu: React.FunctionComponent = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const { isOpen, setIsOpen } = useContext(MenuContext)
 
     const toggleMenu = () => {
         setIsOpen(prevIsOpen => !prevIsOpen)
@@ -16,7 +18,12 @@ const Menu: React.FunctionComponent = () => {
             <IconButton aria-label="Abrir menu" onClick={toggleMenu}>
                 <MenuImage alt="" />
             </IconButton>
-            <StyledMenu open={isOpen} onOpen={toggleMenu} onClose={toggleMenu}>
+            <StyledMenu
+                open={isOpen}
+                onOpen={toggleMenu}
+                onClose={toggleMenu}
+                variant="persistent"
+            >
                 <MenuButton
                     aria-label="Fechar menu"
                     startIcon={<CloseRoundedIcon />}

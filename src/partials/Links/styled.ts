@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Typography, Link } from '@material-ui/core'
 import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=50&max=150&ts-asset'
+import { pallete, typography } from '../../components/Layout/theme'
 
 const mobileWidth = '@media (max-width: 767px)'
 
@@ -30,19 +31,21 @@ export const Unicorn = styled.img.attrs({
 `
 
 export const Section = styled.div`
-    font-family: 'Montserrat';
+    font-family: ${typography.title.font};
+    font-weight: ${typography.title.weight};
 `
 
 export const SectionTitle = styled(Typography)`
-    font-family: 'Montserrat';
+    font-family: ${typography.title.font};
+    font-weight: ${typography.title.weight};
     text-transform: uppercase;
-    font-weight: bold;
 `
 
 export const SectionText = styled(Typography).attrs({
     paragraph: true,
 })`
-    font-family: 'Montserrat';
+    font-family: ${typography.text.font};
+    font-weight: ${typography.text.weight};
     text-align: justify;
     padding: 10px 0;
 `
@@ -55,20 +58,20 @@ export const SectionLink = styled(Link).attrs({
     target: '_blank',
     rel: 'noopener',
 })`
-    color: #212121;
+    color: ${pallete.black};
     text-decoration: underline;
-    text-decoration-color: #03acff;
+    text-decoration-color: ${pallete.blue};
 `
 
 export const SectionDivisor = styled.div`
     height: 1px;
     background-image: linear-gradient(
         to right,
-        #fc27a7 0%,
-        #2cbefc 25%,
-        #adef30 50%,
-        #e527fc 75%,
-        #ffde59 100%
+        ${pallete.purple} 0%,
+        ${pallete.yellow} 25%,
+        ${pallete.blue} 50%,
+        ${pallete.pink} 75%,
+        ${pallete.green} 100%
     );
     width: 100%;
     margin: 40px 100px;

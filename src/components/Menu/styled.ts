@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { SwipeableDrawer, Button, Link } from '@material-ui/core'
 import menuImageSrc from '../../assets/images/menu.png?resize&min=50&max=150&ts-asset'
+import { pallete } from '../Layout/theme'
 
 const menuImageWidth = '50px'
 
@@ -19,7 +20,7 @@ export const StyledMenu = styled(SwipeableDrawer).attrs({
     },
 })`
     .root {
-        background-color: #ffde59;
+        background-color: ${pallete.yellow};
         width: 300px;
     }
 `

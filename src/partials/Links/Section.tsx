@@ -5,6 +5,7 @@ import {
     SectionText,
     LinkArea,
     SectionLink,
+    SectionDivisor,
 } from './styled'
 
 export interface Props {

@@ -5,14 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "npm run lint:ts && npm run lint:js",
-    "lint:js": "eslint --ext .ts --ext .tsx ./src",
-    "lint:ts": "tsc --noEmit"
+    "start": "next build && next start",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "prettier": "prettier --write 'src/**/*.ts' 'src/**/*.tsx'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier && yarn lint"
+    }
   },
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@material-ui/icons": "^4.9.1",
+    "husky": "^4.2.5",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.0",

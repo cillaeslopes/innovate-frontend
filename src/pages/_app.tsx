@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StylesProvider } from '@material-ui/core/styles'
 
 type Props = {
@@ -7,6 +7,14 @@ type Props = {
 }
 
 const MyApp: React.FunctionComponent<Props> = ({ Component, pageProps }) => {
+    useEffect(() => {
+        const jssStyles = document.querySelector('#jss-server-side')
+
+        if (jssStyles) {
+            jssStyles.parentElement.removeChild(jssStyles)
+        }
+    }, [])
+
     return (
         <StylesProvider injectFirst>
             <Component {...pageProps} />

@@ -5,21 +5,26 @@ import Document, {
     NextScript,
     DocumentContext,
 } from 'next/document'
+import { ServerStyleSheets } from '@material-ui/core/styles'
 import { ServerStyleSheet } from 'styled-components'
+import cropTypes from '../assets/fonts/crop-types.ttf'
 
 const GA_URL = 'https://www.googletagmanager.com/gtag/js?id=UA-172464366-1'
 
 export default class MyDocument extends Document {
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     static async getInitialProps(ctx: DocumentContext) {
-        const sheet = new ServerStyleSheet()
+        const styledComponentsSheet = new ServerStyleSheet()
+        const materialSheets = new ServerStyleSheets()
         const originalRenderPage = ctx.renderPage
 
         try {
             ctx.renderPage = () =>
                 originalRenderPage({
                     enhanceApp: App => props =>
-                        sheet.collectStyles(<App {...props} />),
+                        styledComponentsSheet.collectStyles(
+                            materialSheets.collect(<App {...props} />)
+                        ),
                 })
 
             const initialProps = await Document.getInitialProps(ctx)
@@ -28,12 +33,13 @@ export default class MyDocument extends Document {
                 styles: (
                     <>
                         {initialProps.styles}
-                        {sheet.getStyleElement()}
+                        {materialSheets.getStyleElement()}
+                        {styledComponentsSheet.getStyleElement()}
                     </>
                 ),
             }
         } finally {
-            sheet.seal()
+            styledComponentsSheet.seal()
         }
     }
 
@@ -59,6 +65,13 @@ export default class MyDocument extends Document {
                                         gtag('config', 'UA-172464366-1');
                                         </script>`,
                         }}
+                    />
+                    <link
+                        rel="preload"
+                        href={cropTypes}
+                        as="font"
+                        type="font/ttf"
+                        crossOrigin="anonymous"
                     />
                 </Head>
                 <body style={{ margin: 0, height: '100%' }}>

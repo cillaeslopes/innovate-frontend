@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { Typography, IconButton } from '@material-ui/core'
 import sideUnicorn from '../../assets/images/side-unicorn.png?size=300&ts-asset'
+import { InnovateTheme } from '../../components/Layout/InnovateTheme'
 
 const mobileWidth = '@media (max-width: 767px)'
-const textBackgroundColor = '#ffffffbf'
+const textBackgroundColor = InnovateTheme.pallete.whiteTransparency
 
 export const MainStyled = styled.div`
     flex: 1;
@@ -22,9 +23,9 @@ export const AboutStyled = styled(Typography).attrs({
 })`
     width: 50%;
     font-size: 14px;
-    font-weight: 300;
     text-align: justify;
-    font-family: 'Montserrat';
+    font-family: ${InnovateTheme.typography.text.font};
+    font-weight: ${InnovateTheme.typography.text.weight};
     background-color: ${textBackgroundColor};
 
     ${mobileWidth} {
@@ -106,7 +107,7 @@ export const LinkIcon = styled(IconButton).attrs({
     padding: 0;
 
     path {
-        fill: #76079a;
+        fill: ${InnovateTheme.pallete.purple};
     }
 `
 

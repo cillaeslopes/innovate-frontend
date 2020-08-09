@@ -7,6 +7,7 @@ export const InnovateTheme = {
         purple: '#76079a',
         black: '#212121',
         white: '#fafafa',
+        whiteTransparency: '#ffffffbf',
     },
     typography: {
         logo: {

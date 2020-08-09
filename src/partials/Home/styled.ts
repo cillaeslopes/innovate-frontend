@@ -1,5 +1,5 @@
 import { Typography, Link, Button } from '@material-ui/core'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=500&max=1500&ts-asset'
 import rings from '../../assets/images/rings.png'
 
@@ -78,16 +78,9 @@ export const FooterStyled = styled.footer`
     position: fixed;
     bottom: 2vh;
     height: 5vh;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
-    ${props => {
-        if (props.menuIsOpen && props.persistentMenu) {
-            return css`
-                width: calc(100% - 300px);
-            `
-        }
-        return `width: 100%;`
-    }}
 
     @media (max-width: 960px) {
         flex-direction: column;

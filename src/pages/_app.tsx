@@ -1,47 +1,17 @@
 import React from 'react'
-import mediaQuery from 'css-mediaquery'
-import {
-    StylesProvider,
-    ThemeProvider,
-    createMuiTheme,
-} from '@material-ui/core/styles'
-import { MenuContextProvider } from '../contexts/menuContext'
+import { StylesProvider } from '@material-ui/core/styles'
 
 type Props = {
     Component: React.FunctionComponent
     pageProps: Record<string, unknown>
-    deviceType: string
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const MyApp: any = ({ Component, pageProps, deviceType }) => {
-    const ssrMatchMedia = query => ({
-        matches: mediaQuery.match(query, {
-            width: deviceType === 'mobile' ? '0px' : '1024px',
-        }),
-    })
-
-    const theme = createMuiTheme({
-        props: {
-            MuiUseMediaQuery: { ssrMatchMedia },
-        },
-    })
-
+const MyApp: React.FunctionComponent<Props> = ({ Component, pageProps }) => {
     return (
-        <ThemeProvider theme={theme}>
-            <StylesProvider injectFirst>
-                <MenuContextProvider>
-                    <Component {...pageProps} />
-                </MenuContextProvider>
-            </StylesProvider>
-        </ThemeProvider>
+        <StylesProvider injectFirst>
+            <Component {...pageProps} />
+        </StylesProvider>
     )
-}
-
-MyApp.getInitialProps = ({ ctx }) => {
-    return {
-        deviceType: ctx.req.device.type,
-    }
 }
 
 export default MyApp

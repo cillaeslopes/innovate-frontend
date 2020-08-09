@@ -27,6 +27,6 @@
     "config/*.js",
     "next.config.js",
     "**/*.ts",
-    "**/*.tsx", "src/server.js"
+    "**/*.tsx"
   ]
 }

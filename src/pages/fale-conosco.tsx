@@ -1,11 +1,10 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Main from '../partials/Links/Main'
+import Main from '../partials/FaleConosco/Main'
 
-const pageTitle = 'Innovate: Links'
-const pageDescription =
-    'Links úteis Innovate: trello, agenda, instagram, lives e mais'
-const title = 'Links'
+const pageTitle = 'Innovate: Fale Conosco'
+const pageDescription = 'Fale com o Innovate ou contribua com o nosso projeto'
+const title = 'Fale Conosco'
 
 const Page: React.FunctionComponent = () => (
     <Layout

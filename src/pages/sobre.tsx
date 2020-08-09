@@ -7,7 +7,7 @@ const pageDescription =
     'Um pouco mais sobre a Innovate, a Comunidade de TI mais legal de BH'
 const title = 'Quem somos nós na fila do pão'
 
-const About: React.FunctionComponent = () => (
+const Page: React.FunctionComponent = () => (
     <Layout
         pageTitle={pageTitle}
         pageDescription={pageDescription}
@@ -17,4 +17,4 @@ const About: React.FunctionComponent = () => (
     </Layout>
 )
 
-export default About
+export default Page

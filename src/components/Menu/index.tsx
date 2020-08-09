@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { IconButton } from '@material-ui/core'
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded'
-import { MenuImage, StyledMenu, MenuButton } from './styled'
+import Link from 'next/link'
+import { MenuImage, StyledMenu, MenuButton, MenuLink } from './styled'
 import Items from './Items'
 
 const Menu: React.FunctionComponent = () => {
@@ -25,6 +26,9 @@ const Menu: React.FunctionComponent = () => {
                     Fechar
                 </MenuButton>
                 <Items />
+                <Link href="/fale-conosco" passHref>
+                    <MenuLink>Fala aê</MenuLink>
+                </Link>
             </StyledMenu>
         </>
     )

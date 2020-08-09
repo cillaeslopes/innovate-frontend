@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { AppBar, Toolbar, Typography, Link } from '@material-ui/core'
 import unicorn from '../../assets/images/unicorn.png'
+import { InnovateTheme } from '../Layout/InnovateTheme'
 
 export const Header = styled(AppBar).attrs({
-    color: '#fafafa',
+    color: InnovateTheme.pallete.white,
 })`
     height: 10vh;
     border: 2px solid transparent;
@@ -12,11 +13,11 @@ export const Header = styled(AppBar).attrs({
     border-right: 0;
     border-image: linear-gradient(
         to right,
-        #fc27a7 0%,
-        #2cbefc 25%,
-        #adef30 50%,
-        #e527fc 75%,
-        #ffde59 100%
+        ${InnovateTheme.pallete.purple} 0%,
+        ${InnovateTheme.pallete.yellow} 25%,
+        ${InnovateTheme.pallete.blue} 50%,
+        ${InnovateTheme.pallete.pink} 75%,
+        ${InnovateTheme.pallete.green} 100%
     );
     border-image-slice: 1;
 `
@@ -47,7 +48,8 @@ export const UnicornImage = styled.img.attrs({
 `
 
 export const Title = styled(Typography)`
-    font-family: 'Crop Types';
+    font-family: ${InnovateTheme.typography.logo};
+    font-weight: ${InnovateTheme.typography.logo.weight};
     text-transform: uppercase;
     font-size: 24px;
     align-self: flex-end;

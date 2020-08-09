@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheets } from '@material-ui/core/styles'
 import { ServerStyleSheet } from 'styled-components'
+import cropTypes from '../assets/fonts/crop-types.ttf'
 
 const GA_URL = 'https://www.googletagmanager.com/gtag/js?id=UA-172464366-1'
 
@@ -64,6 +65,13 @@ export default class MyDocument extends Document {
                                         gtag('config', 'UA-172464366-1');
                                         </script>`,
                         }}
+                    />
+                    <link
+                        rel="preload"
+                        href={cropTypes}
+                        as="font"
+                        type="font/ttf"
+                        crossOrigin="anonymous"
                     />
                 </Head>
                 <body style={{ margin: 0, height: '100%' }}>

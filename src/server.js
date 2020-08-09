@@ -1,5 +1,5 @@
-const { createServer } = require('http')
-const { parse } = require('url')
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const next = require('next')
 const device = require('express-device')
 const express = require('express')

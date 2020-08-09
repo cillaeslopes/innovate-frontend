@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { StylesProvider } from '@material-ui/core/styles'
 import mediaQuery from 'css-mediaquery'
 import {
     StylesProvider,

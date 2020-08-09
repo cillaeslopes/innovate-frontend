@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node src/server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "node src/server.js",
     "lint": "npm run lint:ts && npm run lint:js",
     "lint:js": "eslint --ext .ts --ext .tsx ./src",
     "lint:ts": "tsc --noEmit"
@@ -13,6 +13,9 @@
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@material-ui/icons": "^4.9.1",
+    "css-mediaquery": "^0.1.2",
+    "express": "^4.17.1",
+    "express-device": "^0.4.2",
     "imagemin": "^7.0.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.0",

@@ -39,3 +39,13 @@ export const MenuLink = styled(MenuButton).attrs({
         text-decoration: none;
     }
 `
+
+export const BottomLink = styled(Button)`
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 16px;
+    bottom: 0;
+    position: fixed;
+    font-size: 20px;
+    text-transform: none;
+`

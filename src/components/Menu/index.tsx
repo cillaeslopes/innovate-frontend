@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { IconButton } from '@material-ui/core'
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded'
-import Link from 'next/link'
-import { MenuImage, StyledMenu, MenuButton, MenuLink } from './styled'
+import SmsOutlinedIcon from '@material-ui/icons/SmsOutlined'
+import { MenuImage, StyledMenu, MenuButton, BottomLink } from './styled'
 import Items from './Items'
 
 const Menu: React.FunctionComponent = () => {
@@ -26,9 +26,13 @@ const Menu: React.FunctionComponent = () => {
                     Fechar
                 </MenuButton>
                 <Items />
-                <Link href="/fale-conosco" passHref>
-                    <MenuLink>Fala aê</MenuLink>
-                </Link>
+                <BottomLink
+                    aria-label="Fale Conosco"
+                    startIcon={<SmsOutlinedIcon />}
+                    href="/fale-conosco"
+                >
+                    Fala aê
+                </BottomLink>
             </StyledMenu>
         </>
     )

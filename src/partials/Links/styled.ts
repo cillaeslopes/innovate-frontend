@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Typography, Link } from '@material-ui/core'
 import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=50&max=150&ts-asset'
-import { InnovateTheme } from '../../components/Layout/InnovateTheme'
+import { pallete, typography } from '../../components/Layout/theme'
 
 const mobileWidth = '@media (max-width: 767px)'
 
@@ -31,21 +31,21 @@ export const Unicorn = styled.img.attrs({
 `
 
 export const Section = styled.div`
-    font-family: ${InnovateTheme.typography.title.font};
-    font-weight: ${InnovateTheme.typography.title.weight};
+    font-family: ${typography.title.font};
+    font-weight: ${typography.title.weight};
 `
 
 export const SectionTitle = styled(Typography)`
-    font-family: ${InnovateTheme.typography.title.font};
-    font-weight: ${InnovateTheme.typography.title.weight};
+    font-family: ${typography.title.font};
+    font-weight: ${typography.title.weight};
     text-transform: uppercase;
 `
 
 export const SectionText = styled(Typography).attrs({
     paragraph: true,
 })`
-    font-family: ${InnovateTheme.typography.text.font};
-    font-weight: ${InnovateTheme.typography.text.weight};
+    font-family: ${typography.text.font};
+    font-weight: ${typography.text.weight};
     text-align: justify;
     padding: 10px 0;
 `
@@ -58,20 +58,20 @@ export const SectionLink = styled(Link).attrs({
     target: '_blank',
     rel: 'noopener',
 })`
-    color: ${InnovateTheme.pallete.black};
+    color: ${pallete.black};
     text-decoration: underline;
-    text-decoration-color: ${InnovateTheme.pallete.blue};
+    text-decoration-color: ${pallete.blue};
 `
 
 export const SectionDivisor = styled.div`
     height: 1px;
     background-image: linear-gradient(
         to right,
-        ${InnovateTheme.pallete.purple} 0%,
-        ${InnovateTheme.pallete.yellow} 25%,
-        ${InnovateTheme.pallete.blue} 50%,
-        ${InnovateTheme.pallete.pink} 75%,
-        ${InnovateTheme.pallete.green} 100%
+        ${pallete.purple} 0%,
+        ${pallete.yellow} 25%,
+        ${pallete.blue} 50%,
+        ${pallete.pink} 75%,
+        ${pallete.green} 100%
     );
     width: 100%;
     margin: 40px 100px;

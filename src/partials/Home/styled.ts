@@ -2,6 +2,7 @@ import { Typography, Link, Button } from '@material-ui/core'
 import styled from 'styled-components'
 import sideUnicorn from '../../assets/images/side-unicorn.png?resize&min=500&max=1500&ts-asset'
 import rings from '../../assets/images/rings.png'
+import { pallete, typography } from '../../components/Layout/theme'
 
 const headerHeight = '10vh'
 const mobileWidth = '@media (max-width: 768px)'
@@ -64,10 +65,10 @@ export const TitleContainer = styled.div`
 export const Title = styled(Typography).attrs({
     variant: 'h1',
 })`
-    font-family: 'Crop Types';
+    font-family: ${typography.logo.font};
+    font-weight: ${typography.logo.weight};
     text-transform: uppercase;
     font-size: 10vw;
-    font-weight: 200;
 
     ${mobileWidth} {
         font-size: 15vw;
@@ -118,7 +119,7 @@ export const Contact = styled(Button).attrs({
     align-items: center;
     margin: 0 2vw 8px 2vw;
     text-decoration: none;
-    color: #212121;
+    color: ${pallete.black};
     text-transform: none;
 
     :hover {

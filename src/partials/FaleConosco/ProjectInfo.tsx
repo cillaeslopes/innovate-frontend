@@ -18,7 +18,7 @@ const ProjectInfo: React.FunctionComponent = () => (
             <br />
             Para contribuir com uma feature nova pedimos que você nos comunique
             o objetivo da feature e como você a pensou, para que possamos
-            organizar a manutenção dessa nova feature.
+            organizar a manutenção e incluí-la no nosso escopo.
         </Text>
     </ProjectContainer>
 )

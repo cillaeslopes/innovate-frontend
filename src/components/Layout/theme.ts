@@ -7,6 +7,7 @@ export const pallete = {
     black: '#212121',
     white: '#fafafa',
     whiteTransparency: '#ffffffbf',
+    gray: '#efefef',
 }
 
 export const typography = {

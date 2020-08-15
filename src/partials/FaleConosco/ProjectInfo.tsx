@@ -5,7 +5,7 @@ import { Text, ProjectContainer, ProjectLink } from './styled'
 const ProjectInfo: React.FunctionComponent = () => (
     <ProjectContainer>
         <ProjectLink
-            href="github.com/cillaeslopes/innovate-frontend"
+            href="https://github.com/cillaeslopes/innovate-frontend"
             startIcon={<GitHubIcon />}
         >
             Projeto no Github

@@ -77,7 +77,11 @@ export const ProjectContainer = styled.div`
     flex-direction: column;
 `
 
-export const ProjectLink = styled(Button)`
+export const ProjectLink = styled(Button).attrs({
+    component: Link,
+    target: '_blank',
+    rel: 'noopener',
+})`
     padding: 0;
     font-weight: bold;
     background-color: ${pallete.gray};

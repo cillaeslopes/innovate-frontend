@@ -1,28 +1,11 @@
 import React from 'react'
-import { TextField } from '@material-ui/core'
-import {
-    MainStyled,
-    LeftContainer,
-    RightContainer,
-    FormContainer,
-    SendButton,
-} from './styled'
+import { MainStyled, LeftContainer, RightContainer } from './styled'
+import Form from './Form'
 
 const Main: React.FunctionComponent = () => (
     <MainStyled>
         <LeftContainer>
-            <FormContainer>
-                <TextField id="name" label="Seu nome" />
-                <TextField id="email" label="Seu email" />
-                <TextField id="subject" label="Assunto" />
-                <TextField
-                    id="message"
-                    label="Escreva sua mensagem..."
-                    multiline
-                    rows={10}
-                />
-                <SendButton>Enviar</SendButton>
-            </FormContainer>
+            <Form />
         </LeftContainer>
         <RightContainer />
     </MainStyled>

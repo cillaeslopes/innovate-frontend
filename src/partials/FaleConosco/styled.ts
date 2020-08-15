@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FormControl, TextField, Button, Link } from '@material-ui/core'
-import { pallete, typography } from '../../components/Layout/theme'
+import { pallete } from '../../components/Layout/theme'
 
 const mobileWidth = '@media (max-width: 767px)'
 
@@ -27,12 +27,15 @@ export const LeftContainer = styled.div`
 
 export const FormContainer = styled(FormControl)`
     width: 100%;
+    background-color: ${pallete.gray};
+    padding: 10px 20px;
 `
 
 export const Field = styled(TextField).attrs({
     fullWidth: true,
 })`
-    font-family: ${typography.text};
+    margin-bottom: 10px;
+    font-size: 12px;
 `
 
 export const SendButton = styled(Button)`

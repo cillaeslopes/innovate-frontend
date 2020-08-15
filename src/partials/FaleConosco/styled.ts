@@ -10,6 +10,7 @@ export const MainStyled = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 20px;
 
     ${mobileWidth} {
         flex-direction: column;
@@ -45,10 +46,12 @@ export const SendButton = styled(Button)`
 
 export const RightContainer = styled.div`
     width: 40%;
+    margin-right: 5%;
 
     ${mobileWidth} {
         width: 100%;
         margin-top: 30px;
+        margin-right: 0;
     }
 `
 

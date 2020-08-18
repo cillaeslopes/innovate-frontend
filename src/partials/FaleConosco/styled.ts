@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FormControl, TextField, Button, Link } from '@material-ui/core'
-import { pallete } from '../../components/Layout/theme'
+import { pallete, typography } from '../../components/Layout/theme'
 
 const mobileWidth = '@media (max-width: 767px)'
 
@@ -37,6 +37,12 @@ export const Field = styled(TextField).attrs({
 })`
     margin-bottom: 10px;
     font-size: 12px;
+
+    .MuiInput-input,
+    .MuiFormLabel-root {
+        font-family: ${typography.text.font};
+        font-weight: ${typography.text.weight};
+    }
 `
 
 export const SendButton = styled(Button)`
